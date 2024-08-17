@@ -11,7 +11,7 @@ extension PathFormatExtension on String {
       .replaceAll(r'\', Platform.pathSeparator);
 }
 
-extension SttrinFormatExtension on String {
+extension StringFormatExtension on String {
   List<String> splitInPos(int pos) {
     assert(pos > 0, 'pos must be greater than 0');
     assert(pos < length, 'pos must be less than length');

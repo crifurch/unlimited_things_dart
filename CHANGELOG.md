@@ -5,3 +5,7 @@
 ## 0.0.2
 
 - Initial version. v2
+
+## 0.0.3
+
+- Fix naming
