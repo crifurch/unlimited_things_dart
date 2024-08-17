@@ -31,8 +31,7 @@ extension SttrinFormatExtension on String {
 
   String get pascalCase => camelCase.capitalize;
 
-  String get snakeCase =>
-      uncapitalize
+  String get snakeCase => uncapitalize
       .splitMapJoin(RegExp(r'([A-Z|\s])'), onMatch: (m) => '_${m[1]}'.trim())
       .toLowerCase();
 }

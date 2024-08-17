@@ -18,11 +18,14 @@ class DartEncoder extends Converter<Object?, String> {
 
   @override
   String convert(dynamic input) {
-    var result = JsonEncoder.withIndent(indent, _toEncodable).convert(input).replaceAll('"', "'");
+    var result = JsonEncoder.withIndent(indent, _toEncodable)
+        .convert(input)
+        .replaceAll('"', "'");
     if (input is Map || input is List) {
       final indexOfComma = result.lastIndexOf("'");
       if (indexOfComma != -1) {
-        result = '${result.substring(0, indexOfComma + 1)},${result.substring(indexOfComma + 1)}';
+        result =
+            '${result.substring(0, indexOfComma + 1)},${result.substring(indexOfComma + 1)}';
       }
     }
     return result;
