@@ -13,3 +13,7 @@
 ## 0.0.4
 
 - add let extension as in Kotlin
+
+## 0.0.5
+
+- add json objects typedefs
