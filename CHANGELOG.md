@@ -9,3 +9,7 @@
 ## 0.0.3
 
 - Fix naming
+
+## 0.0.4
+
+- add let extension as in Kotlin
