@@ -17,3 +17,7 @@
 ## 0.0.5
 
 - add json objects typedefs
+
+## 0.0.6
+
+- update extensions
