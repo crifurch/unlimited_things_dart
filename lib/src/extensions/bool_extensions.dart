@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:unlimited_things_dart/src/types/function_typedefs.dart';
 
 extension ConditionalResultExtension on bool {
-  ConditionalResult<T, T, T> conditionalResult<T>(T trueValue, T falseValue) =>
-      ConditionalResult(
-          condition: this, trueResult: trueValue, falseResult: falseValue);
+  ConditionalResult<T, T, T> conditionalResult<T>(T trueValue, T falseValue) => ConditionalResult(
+        condition: this,
+        trueResult: trueValue,
+        falseResult: falseValue,
+      );
 }
 
 class ConditionalResult<Type, True, False> {

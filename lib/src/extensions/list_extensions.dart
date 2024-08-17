@@ -1,8 +1,8 @@
-extension SeparatedList on Iterable {
-  List<T> separated<T>(T Function(int index) separator) {
+extension SeparatedList<T> on Iterable<T> {
+  List<T> separated(T Function(int index) separator) {
     final result = <T>[];
     for (var i = 0; i < length; i++) {
-      result.add(elementAt(i) as T);
+      result.add(elementAt(i));
       if (i != length - 1) {
         result.add(separator(i));
       }
